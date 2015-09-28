@@ -98,6 +98,7 @@
                 for (var i in data) {
                     addStory(data[i], '#newsStories-cont');
                 }
+                // could add adverts here after a block of content
             },
             error: function(data) {
                 // When I get a 400 back, fail safely
@@ -118,7 +119,7 @@
         $(this).hide();
     });
 
-    // Detect scroll events if available content from server
+    // Detect scroll events only if content available from server
     // Uses setTimeout to limit amount of events fired 
     // https://dannyvankooten.com/delay-scroll-handlers-javascript/
     var content = true;
@@ -144,7 +145,7 @@
         return false;
     });
 
-    // Handles touch swibe event. http://hammerjs.github.io/
+    // Handles touch swipe event. http://hammerjs.github.io/
     var hammertime = new Hammer(document.getElementById("page-body"));
     hammertime.on('swipeleft', function(ev) {
         console.log(ev);
