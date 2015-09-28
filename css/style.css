@@ -1,6 +1,24 @@
-.date {
+body {
+    width: 100;
+    margin: 0 auto;
+}
+#scrolly {
+    text-align: center;
+    margin: 10px auto;
+}
+.clock {
+    width: 100%;
+    height: 40px;
 	font-size: 12px;
-	padding: 5px;
+	padding: 10px;
+    text-align: center
+}
+.clockbox {
+    width: 100%;
+    height: 40px;
+	font-size: 12px;
+	padding: 10px;
+    text-align: center
 
 }
 #sharers {
@@ -21,11 +39,55 @@
 .headline-img {
 	width: 100%;
 }
+.news-img {
+	width: 100%;
+}
+.dummy-img {
+    background: url('images/loading.gif') no-repeat center;
+    height: 200px;
+    width: 100%;
+}
 #end-of-content {
 	border-bottom: 1px solid black;
 	margin-bottom: 50px;
 	text-align: center;
 }
-/*img {
-  background: url('loading.gif') no-repeat;
-}*/
+#loading-image {
+    background: url('images/loading.gif') no-repeat center;
+    height: 200px;
+    width: 100%;
+}
+.scroll-top {
+    width: 100%;
+    height: 100px;
+    background: #F8F8F8;
+    text-align: center;
+}
+#hammer {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: #F8F8F8;
+    z-index: 10;
+
+}
+#hammer-scroll {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 20;
+}
+.navbar-form {
+    width: 100%;
+    margin: 5px auto;
+}
+
+@media (max-width: 782px) {
+  #sticky-header {
+      display: none;
+  }
+}
